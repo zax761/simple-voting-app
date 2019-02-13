@@ -1,33 +1,76 @@
 .App {
-  text-align: center;
+  margin-top: 8px;
+  margin-left: 8px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  font-size: 16px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 2px solid #0066ff;
+}
+
+.thumbsIconTd,
+.number {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.number {
+  text-align: right;
+  width: 64px;
+}
+
+.test {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.header {
+  margin-bottom: 8px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.thumbsIcon {
+  margin-top: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.website {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+  line-height: 4px;
+  width: 300px;
+}
+
+.websiteName {
+  text-decoration: underline;
+}
+
+.withcolor {
+  background-color: #99ccff;
+}
+
+.addWebsiteButton {
+  margin-top: 8px;
+  border: 1px solid #0066ff;
+  background-color: #3399ff;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
