@@ -15,9 +15,7 @@ table {
   border-collapse: collapse;
 }
 
-table,
-th,
-td {
+.mainTable {
   border: 2px solid #0066ff;
 }
 
@@ -68,9 +66,36 @@ td {
   background-color: #99ccff;
 }
 
-.addWebsiteButton {
+button {
   margin-top: 8px;
   border: 1px solid #0066ff;
   background-color: #3399ff;
   color: white;
+}
+
+.modal {
+  width: 550px;
+  height: 150px;
+  margin-left: 8px;
+  margin-top: 400px;
+  text-align: center;
+}
+
+.modal input {
+  width: 150px;
+}
+
+.modal td {
+  padding: 0px;
+  width: 200px;
+  color: #0066ff;
+  margin: 0 auto;
+}
+
+.modalButtons {
+  float: right;
+}
+
+.modalButtons button {
+  margin: 10px;
 }
