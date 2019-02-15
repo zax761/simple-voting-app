@@ -157,24 +157,24 @@ class App extends Component {
           <tbody>
             {data.map((value, index) => (
               <tr key={index}>
-                <td className="thumbsIconTd">
+                <td className="likes">
                   <img
                     className="clickable thumbsIcon"
                     onClick={() => this.upVoteHandler(index)}
                     src={thumbsUp}
                     alt="thumbsUp"
                   />
+                  <span>{value.likes}</span>
                 </td>
-                <td className="number">{value.likes}</td>
-                <td className="thumbsIconTd">
+                <td className="dislikes">
                   <img
                     className="clickable thumbsIcon"
                     onClick={() => this.downVoteHandler(index)}
                     src={thumbsDown}
                     alt="thumbsDown"
                   />
+                  <span>{value.dislikes}</span>
                 </td>
-                <td className="number">{value.dislikes}</td>
                 <td
                   className={`${
                     index % 2 === 0 ? "empty" : "withcolor"
@@ -194,7 +194,7 @@ class App extends Component {
             ))}
           </tbody>
         </table>
-        <button className="clickable" onClick={this.openModal}>
+        <button className="clickable addWebsiteButton" onClick={this.openModal}>
           Add Your Favorite Website
         </button>
         <Modal

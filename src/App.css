@@ -15,19 +15,17 @@ table {
   border-collapse: collapse;
 }
 
+td {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 .mainTable {
   border: 2px solid #0066ff;
 }
 
-.thumbsIconTd,
-.number {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.number {
-  text-align: right;
-  width: 64px;
+span {
+  margin-left: 16px;
 }
 
 .test {
@@ -44,7 +42,6 @@ table {
 }
 
 .thumbsIcon {
-  margin-top: 4px;
   width: 16px;
   height: 16px;
 }
@@ -73,8 +70,12 @@ button {
   color: white;
 }
 
+.addWebsiteButton {
+  margin-left: 212px;
+}
+
 .modal {
-  width: 550px;
+  width: 500px;
   height: 150px;
   margin-left: 8px;
   margin-top: 400px;
