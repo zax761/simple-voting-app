@@ -141,8 +141,14 @@ class App extends Component {
             dislikes: 0,
             description: modal.websiteDescription
           }
-        ]
+        ],
+        ...modal,
+        isOpen: false,
+        websiteName: "",
+        websiteUrl: "",
+        websiteDescription: ""
       });
+      // this.closeModal();
     }
   };
 
@@ -174,11 +180,7 @@ class App extends Component {
                   />
                   <span>{value.dislikes}</span>
                 </td>
-                <td
-                  className={`${
-                    index % 2 === 0 ? "empty" : "withcolor"
-                  } website`}
-                >
+                <td className={`${index % 2 ? "withcolor" : "empty"} website`}>
                   <p
                     className="clickable websiteName websiteP"
                     onClick={() => this.openWebsiteHandler(index)}
